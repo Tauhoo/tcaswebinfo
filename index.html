@@ -24,16 +24,6 @@
       href="https://fonts.googleapis.com/css?family=Kanit"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
     <title>การคัดเลือกนิสิตเข้าศึกษาต่อในมหาวิทยาลัย</title>
   </head>
 
@@ -45,7 +35,9 @@
       <div class="header-container">
         <h1>การคัดเลือกนิสิตเข้าศึกษาต่อ</h1>
         <h2>สามารถแบ่งเป็นรอบต่างๆได้ดังนี้</h2>
-        <img src="/assets/slidable.svg" alt="slidable" width="60px" />
+
+        <br>
+        <img class="scroll-down" src="/assets/slidable.svg" alt="slidable" width="60px" />
       </div>
       <div class="top-background"></div>
     </div>
@@ -80,64 +72,62 @@
                   aria-expanded="false"
                   ><span class="info">รายละเอียดของโควต้าแต่ละแบบ</span>
                 </a>
-<<<<<<< Updated upstream
-=======
     <div class="main-container">
       <center>
         <h1>รอบการคัดเลือก</h1>
       </center>
       <br><br>
->>>>>>> Stashed changes
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">โควต้าจังหวัด</a>
-                  <a class="dropdown-item" href="#">โควต้าโรงเรียนสาธิต</a>
-                  <a class="dropdown-item" href="#">โควต้านักกีฬา</a>
-                </div>
-              </div>
-            </center>
+      <div class="main-grid">
+        <div class="tcas-container">
+          <div class="circle">
+            TCAS<br><span>1</span>
           </div>
+          <p class="info">
+            รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
+          </p>
+          <a href="#" class="tcas-link">
+            รายละเอียดของโควต้าแต่ละแบบ
+          </a>
         </div>
 
         <div class="tcas-container">
-          <div>
-            <span class="dot">
-              <center class="tcas-word">
-                <h1>TCAS</h1>
-                <h1>3</h1>
-              </center>
-            </span>
+          <div class="circle">
+            TCAS<br><span>2</span>
           </div>
-          <div>
-            <p class="info">รอบรับตรงร่วมกันใช้วิธีการสอบกลางต่างๆ</p>
-            <center>
-              <button type="button" class="btn btn-secondary">
-                <p class="info">ดูรายละเอียดเพิ่มเติม</p>
-              </button>
-            </center>
-          </div>
+          <p class="info">
+            รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
+          </p>
+          <a href="#" class="tcas-link">
+            รายละเอียดของโควต้าแต่ละแบบ
+          </a>
         </div>
 
         <div class="tcas-container">
-          <div>
-            <span class="dot">
-              <center class="tcas-word">
-                <h1>TCAS</h1>
-                <h1>4</h1>
-              </center>
-            </span>
+          <div class="circle">
+            TCAS<br><span>3</span>
           </div>
-          <div>
-            <p class="info">รอบAdmissionรวม</p>
-            <center>
-              <button type="button" class="btn btn-secondary">
-                <p class="info">ดูรายละเอียดเพิ่มเติม</p>
-              </button>
-            </center>
-          </div>
+          <p class="info">
+            รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
+          </p>
+          <a href="#" class="tcas-link">
+            รายละเอียดของโควต้าแต่ละแบบ
+          </a>
         </div>
 
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        $(".scroll-down").click(function() {
+          $('html, body').animate({
+            scrollTop: $(window).height()}, 'slow', 'swing', function() {});
+        })
+
+      })
+    </script>
   </body>
 </html>
