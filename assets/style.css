@@ -163,6 +163,7 @@ a.tcas-link {
 }
 .logo-img {
   width: 100%;
+
 }
 
 
@@ -193,47 +194,87 @@ hr {
   }
 }
 
-.back-to-main{
+.back-to-main {
   margin-right: 1rem;
 }
-#citeria-score{
+#citeria-score {
   border: 3px solid green;
   width: 75%;
 }
-#eng{
+#eng {
   font-size: 0.8rem;
 }
-.highlight{
+.highlight {
   font-weight: bold;
   color: red;
 }
-.content{
-  margin-top:0.5rem;
+.content {
+  margin-top: 0.5rem;
 }
+
 p{
   font-size: 1.2rem;
 }
-.qualification{
+.qualification {
   font-size: 1.2rem;
 }
-.warning{
+.warning {
   color: red;
-  border:3px solid black;
-  width:65%;
+  border: 3px solid black;
+  width: 65%;
   text-align: center;
+  padding: 1rem;
 }
-@media (max-width:1070px){
-  .name{
-      width: 150px; 
-      display: inline-block;      
-      overflow: hidden;
-      text-overflow: ellipsis; 
+.table {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin-bottom: 5rem;
+}
+
+.register-button {
+  border: none;
+  background-color: rgba(39, 174, 96, 1);
+  height: 3rem;
+  width: 10rem;
+  border-radius: 3rem;
+  position: relative;
+  left: 50%;
+  top: 3rem;
+  transform: translateX(-50%);
+  transition: 0.6s;
+}
+
+.register-button > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.register-button:hover {
+  background-color: rgba(46, 204, 113, 1);
+}
+
+@media (max-width: 1070px) {
+  h1 {
+    font-size: 1.5rem;
   }
-  #citeria-score{
-      font-size: 0.65rem;
-      width:100%;
+  .name {
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  #eng{
-      font-size: 0.55rem;
+  #citeria-score {
+    font-size: 0.65rem;
+    width: 100%;
+  }
+  #eng {
+    font-size: 0.55rem;
   }
 }
