@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"> 
@@ -14,13 +14,13 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="main.html">
-          <img src="back_icon.svg" width="30" height="30" class="d-inline-block align-top back-to-main" alt="">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/back-icon.svg" width="30" height="30" class="d-inline-block align-top back-to-main" alt="">
           <span class="name">โครงการส่งเสริมโอกาสศึกษาต่อในมหาวิทยาลัยเกษตรศาสตร์สำหรับนักเรียนจบมัธยมศึกษาตอนปลาย
 จากโรงเรียนมัธยมศึกษาในท้องถิ่น</span>
         </a>
     </nav>
-    <div class="container">
+    <div class="container wrapper">
         <h1>ข้อมูลการรับสมัครของโครงการส่งเสริมโอกาสศึกษาต่อในมหาวิทยาลัยเกษตรศาสตร์สำหรับนักเรียนจบมัธยมศึกษาตอนปลาย
                 จากโรงเรียนมัธยมศึกษาในท้องถิ่น</h1>
         <h3>คุณสมบัติของผู้สมัคร</h3>
@@ -57,26 +57,22 @@
         </p>
         <h3>เกณฑ์คะแนนพิจารณาคัดเลือก</h3>
         <p>
-            <table id="citeria-score">
-                <tr>
-                  <th>GPAX</th>
-                  <th>แผนการเรียน</th> 
-                  <th>GAT</th>
-                  <th>PAT1</th>
-                  <th>PAT2</th>
-                  <th id="eng">O-NET(03)</br>ภาษาอังกฤษ(&#x2265;)</th>
-                  <th>จำนวนที่รับ</th>
-                </tr>
-                <tr>
-                    <td>3.25</td>
-                    <td>วิทย์-คณิต</td>
-                    <td>x&#772;</td>
-                    <td>x&#772;</td>
-                    <td>x&#772;</td>
-                    <td>25</td>
-                    <td>3</td>
-                </tr>
-              </table>
+            <div class="table">
+                <div>GPAX</div>
+                <div>แผนการเรียน</div>
+                <div>GAT</div>
+                <div>PAT1</div>
+                <div>PAT2</div>
+                <div id="eng">O-NET(03)</br>ภาษาอังกฤษ(&#x2265;)</div>
+                <div>จำนวนที่รับ</div>
+                <div>3.25</div>
+                <div>วิทย์-คณิต</div>
+                <div>x&#772;</div>
+                <div>x&#772;</div>
+                <div>x&#772;</div>
+                <div>25</div>
+                <div>3</div>
+            </div>
         </p>
         <h3>การเลือกคณะหรือสาขาวิชา</h3>
         <p>ผู้สมัครมีสิทธิ์เลือกสมัครได้คนละ 1 สาขาวิชา</p>
@@ -185,6 +181,7 @@
                 </li>
             </ol>
         </p>
+        <button class="register-button"><a href="./">สมัคร</a></button>
     </div>
 </body>
 </html>
