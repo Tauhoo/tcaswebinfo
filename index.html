@@ -15,7 +15,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Sarabun"
       rel="stylesheet"
@@ -29,15 +29,18 @@
 
   <body>
     <div class="top-container">
-      <div class="image">
-        <img src="/assets/logo.png" class="logo-img" />
-      </div>
+      <div class="image"><img src="./assets/logo.png" class="logo-img" /></div>
       <div class="header-container">
         <h1>การคัดเลือกนิสิตเข้าศึกษาต่อ</h1>
         <h2>สามารถแบ่งเป็นรอบต่างๆได้ดังนี้</h2>
 
-        <br>
-        <img class="scroll-down" src="/assets/slidable.svg" alt="slidable" width="60px" />
+        <br />
+        <img
+          class="scroll-down"
+          src="./assets/slidable.svg"
+          alt="slidable"
+          width="60px"
+        />
       </div>
       <div class="top-background"></div>
     </div>
@@ -45,60 +48,49 @@
     <hr />
 
     <div class="main-container">
-      <center>
-        <h1>รอบการคัดเลือก</h1>
-      </center>
-      <br><br>
+      <center><h1>รอบการคัดเลือก</h1></center>
+      <br /><br />
 
       <div class="main-grid">
         <div class="tcas-container">
-          <div class="circle">
-            TCAS<br><span>1</span>
-          </div>
+          <div class="circle">TCAS<br /><span>1</span></div>
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link">
-            รายละเอียดของโควต้าแต่ละแบบ
-          </a>
+          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
         </div>
 
         <div class="tcas-container">
-          <div class="circle">
-            TCAS<br><span>2</span>
-          </div>
+          <div class="circle">TCAS<br /><span>2</span></div>
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link">
-            รายละเอียดของโควต้าแต่ละแบบ
-          </a>
+          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
         </div>
 
         <div class="tcas-container">
-          <div class="circle">
-            TCAS<br><span>3</span>
-          </div>
+          <div class="circle">TCAS<br /><span>3</span></div>
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link">
-            รายละเอียดของโควต้าแต่ละแบบ
-          </a>
+          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
         </div>
-
       </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-
-        $(".scroll-down").click(function() {
-          $('html, body').animate({
-            scrollTop: $(window).height()}, 'slow', 'swing', function() {});
+        $('.scroll-down').click(function() {
+          $('html, body').animate(
+            {
+              scrollTop: $(window).height(),
+            },
+            'slow',
+            'swing',
+            function() {},
+          )
         })
-
       })
     </script>
   </body>
