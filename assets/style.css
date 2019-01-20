@@ -181,6 +181,16 @@ h2 {
   height: 100%;
 }
 
+#ps{
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
+
+.ps-container{
+  margin-top: 1rem;
+}
+
 @media (max-width: 1250px) {
   .main-container {
     width: 100%;
