@@ -25,6 +25,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+li {
+  font-size: 1.2rem;
+}
+
 /* Landing section */
 .scroll-down {
   cursor: pointer;
