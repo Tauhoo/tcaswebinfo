@@ -79,11 +79,25 @@ h2 {
 .tcas-link {
   text-decoration: none;
   display: inline-block;
-  color: rgb(44, 106, 103);
+  color: rgb(44, 106, 103) !important;
   background-color: transparent;
   border-radius: 5px;
   text-align: center;
   border: 1px solid rgb(44, 106, 103);
+  padding: 10px 20px;
+
+  font-family: Kanit;
+  font-size: 1.2rem;
+}
+
+.tcas-link-disable {
+  text-decoration: none;
+  display: inline-block;
+  color: gray !important;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid gray;
   padding: 10px 20px;
 
   font-family: Kanit;
