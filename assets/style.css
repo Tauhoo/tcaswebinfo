@@ -181,13 +181,13 @@ h2 {
   height: 100%;
 }
 
-#ps{
+#ps {
   text-decoration: underline;
   font-weight: bold;
   color: red;
 }
 
-.ps-container{
+.ps-container {
   margin-top: 1rem;
 }
 
@@ -295,7 +295,7 @@ p {
 .table > div {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   justify-items: center;
   align-items: center;
 
@@ -367,6 +367,7 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 @media (max-width: 1070px) {
   h1 {
     font-size: 1.5rem;
@@ -377,5 +378,11 @@ p {
   }
   #eng {
     font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .table > div > div {
+    font-size: 0.7rem;
   }
 }
