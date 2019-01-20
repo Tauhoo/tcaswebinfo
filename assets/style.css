@@ -191,6 +191,10 @@ h2 {
   margin-top: 1rem;
 }
 
+.content{
+  font-size:1.3rem;
+}
+
 @media (max-width: 1250px) {
   .main-container {
     width: 100%;
