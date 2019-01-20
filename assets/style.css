@@ -40,8 +40,13 @@ h2 {
 
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
+  grid-row-gap: 60px;
+}
+
+.main-grid > div:last-child {
+  grid-column: 1 / span 2;
 }
 
 .circle {
@@ -178,6 +183,10 @@ hr {
 @media (max-width: 1000px) {
   .tcas-container > div:last-child {
     grid-template-rows: 9rem auto;
+  }
+
+  .main-grid > div:last-child {
+    grid-column: 1 / 1;
   }
 }
 
