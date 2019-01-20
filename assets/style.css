@@ -77,10 +77,11 @@ h2 {
   margin: 45px 0;
 }
 
-a.tcas-link {
+.tcas-link {
   text-decoration: none;
   display: inline-block;
-  color: rgb(44, 106, 103);
+  color: rgb(44, 106, 103) !important;
+  background-color: transparent;
   border-radius: 5px;
   text-align: center;
   border: 1px solid rgb(44, 106, 103);
@@ -88,6 +89,44 @@ a.tcas-link {
 
   font-family: Kanit;
   font-size: 1.2rem;
+}
+
+.tcas-link-disable {
+  text-decoration: none;
+  display: inline-block;
+  color: gray !important;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px 20px;
+
+  font-family: Kanit;
+  font-size: 1.2rem;
+}
+
+.program-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.program-list > a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  transition: 0.3s;
+  display: inline-block;
+  word-wrap: break-word;
+
+  font-family: Kanit;
+  font-size: 1.2rem;
+}
+
+.program-list > a:hover {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
 }
 
 .tcas-container {

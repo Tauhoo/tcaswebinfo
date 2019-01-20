@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Sarabun"
@@ -57,7 +60,7 @@
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
+          <button class="tcas-link-disable">อยู่ระหว่างประกาศผล</button>
         </div>
 
         <div class="tcas-container">
@@ -65,7 +68,64 @@
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
+          <button class="tcas-link" data-toggle="modal" data-target="#tcas1">
+            รายละเอียดของโควต้าแต่ละแบบ
+          </button>
+          <div
+            class="modal fade"
+            id="tcas1"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1>โครงการทั้งหมด</h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body program-list">
+                  <a href="./"
+                    >1. โครงการรับผู้มีความสามารถทางด้านศิลปวัฒนธรรมฯ</a
+                  >
+                  <a href="./">2. โครงการรับผู้มีความสามารถทางกีฬาดีเด่นฯ</a>
+                  <a href="./"
+                    >3.
+                    โครงการส่งเสริมโอกาสศึกษาต่อในมหาวิทยาลัยเกษตรศาสตร์สำหรับนักเรียนจากโรงเรียนมัธยมศึกษาในท้องถิ่น
+                    (โควตาพิเศษ)</a
+                  >
+                  <a href="./"
+                    >4.
+                    โครงการรับนักเรียนดีเด่นจากโรงเรียนสาธิตแห่งมหาวิทยาลัยเกษตรศาสตร์เข้าศึกษาต่อในมหาวิทยาลัยเกษตรศาสตร์</a
+                  >
+                  <a href="./">5. โครงการเมล็ดพันธุ์สู่ศาสตร์แห่งแผ่นดิน</a>
+                  <a href="./">6. โครงการเพชรนนทรี</a>
+                  <a href="./">7. โครงการลูกพระพิรุณ</a>
+                  <a href="./">8. โครงการเด็กไทยสู่สากล</a>
+                  <a href="./"
+                    >9. โครงการส่งเสริมโอกาสศึกษาต่อในวิทยาลัยการชลประทาน</a
+                  >
+                  <a href="./"
+                    >10. โครงการส่งเสริมโอกาสศึกษาต่อในคณะวนศาสตร์
+                    (โควตาพิเศษ)</a
+                  >
+                  <a href="./"
+                    >11.
+                    โครงการส่งเสริมโอกาสศึกษาต่อในพื้นที่การดูแลของศูนย์อำนวยการบริหารจังหวัดชายแดนภาคใต้
+                    (ศอ.บต.)z</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="tcas-container">
@@ -73,7 +133,7 @@
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
+          <a class="tcas-link" href="./"> รายละเอียดของโครงการ </a>
         </div>
 
         <div class="tcas-container">
@@ -81,7 +141,7 @@
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
+          <a class="tcas-link" href="./"> รายละเอียดของโครงการ </a>
         </div>
 
         <div class="tcas-container">
@@ -89,7 +149,7 @@
           <p class="info">
             รอบนี้เป็นรอบสำหรับนักเรียนที่มีความสามารถพิเศษต่างๆหรือโควต้าต่างๆที่มหาวิทยาลัยจัดขึ้นมา
           </p>
-          <a href="#" class="tcas-link"> รายละเอียดของโควต้าแต่ละแบบ </a>
+          <button class="tcas-link-disable">กำลังรอข้อมูล</button>
         </div>
       </div>
     </div>
